@@ -38,7 +38,7 @@ GROUP BY p.product_name
 WHERE Ranking_Products <= 5
 
 
--- Find the TOP-10 customers who hav generated the highest revenue.
+-- Find the TOP-10 customers who have generated the highest revenue.
 SELECT TOP 10
 	c.customer_id,
 	c.first_name,
@@ -64,4 +64,5 @@ ON f.customer_key = c.customer_key
 GROUP BY c.customer_id,
 	c.first_name,
 	c.last_name
+
 ORDER BY Total_Orders
